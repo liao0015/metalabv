@@ -1,0 +1,343 @@
+h1, h2, h3, p{
+	font-family: font-family: 'Roboto', 'Open Sans', 'Raleway', sans-serif;
+}
+
+.div-title{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.icon-bar{
+	background: #337ab7;
+}
+
+/* Key steps
+-------------------------------------------------- */
+
+.key-steps{
+	background-color: #e3f2fd;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.key-steps .col-lg-2 h2{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Metalab banner
+-------------------------------------------------- */
+
+div#metalab-banner{
+	width: 100%;
+	height: 450px;
+	margin: 0;
+	background: url("img/metalab-banner.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div#banner-content{
+	color: white;
+	font-size: 2.5em;
+	font-family: 'Raleway', sans-serif;
+	width: 80%;
+	padding-top: 15%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Key features
+-------------------------------------------------- */
+
+.key-features{
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
+
+/* Panels
+-------------------------------------------------- */
+div#trending-div{
+	font-family: 'Roboto', sans-serif;
+}
+
+div#datavisual-div{
+	width: 100%;
+	height: 350px;
+	margin: 0;
+	padding-top: 6%;
+	color:#337ab7;
+	font-family: 'Roboto', sans-serif;
+	background: url("img/background-mid.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div#mid-div{
+	padding-top: 8%;
+	padding-bottom: 6%;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	background: url("img/cool-white-background.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Slides
+-------------------------------------------------- */
+div#slide1-caption{
+	background-color: #969696;
+	opacity: 0.9;
+}
+
+div#slide2-caption{
+	background-color: #969696;
+	opacity: 0.9;
+}
+
+div#slide3-caption{
+	background-color: #969696;
+	opacity: 0.9;
+}
+
+div#slide4-caption{
+	background-color: #969696;
+	opacity: 0.9;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+footer{
+	background-color: #e3f2fd;
+	min-height:350px; 
+	color: #337ab7;
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+	padding: 0;
+}
+
+.footerleft { 
+	margin-top:50px; 
+	padding:0 36px; 
+}
+
+.logofooter { 
+	margin-bottom:10px;
+	margin-left: 10px; 
+}
+
+.footerleft p { 
+	font-size:12px !important; 
+	font-family: 'Open Sans', sans-serif; 
+	margin-bottom:15px;
+}
+
+/*.footerleft p i { 
+	width:20px; 
+}*/
+
+.paddingtop-bottom {  
+	margin-top:50px;
+}
+
+.footer-ul { 
+	list-style-type:none;  
+	padding-left:0px; 
+	margin-left:2px;
+}
+
+.footer-ul li { 
+	line-height:29px; 
+	font-size:12px;
+}
+
+.footer-ul li a { 
+	transition: color 0.2s linear 0s, background 0.2s linear 0s; 
+}
+
+.footer-ul i { 
+	margin-right:10px;
+}
+
+.footer-ul li a:hover {
+	transition: color 0.2s linear 0s, background 0.2s linear 0s; 
+	color:#ff670f; 
+}
+
+.heading7 { font-size:21px; font-weight:700; margin-bottom:22px;}
+
+div#external-links img{
+	margin-left: 10px;
+}
+
+div#external-links img:hover{
+	box-shadow: 3px 3px 2px #337ab7;
+}
+
+/* CONTACT FORM
+-------------------------------------------------- */
+
+#contact-form {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	background-color:#337ab7;
+	text-align: center;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+}
+
+div#contact-side-div{
+	font-size: 0.6em;
+	font-weight: 100;
+	text-align: left;
+}
+
+label {
+  font-weight: 300;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  text-align: center;
+  background: none;
+  font-weight: 700;
+  font-family: 'Lato', georgia;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  max-width: 90%;
+  padding: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  cursor: text;
+}
+
+textarea {
+  text-align: left;
+  /* overflow:hidden; */
+  resize: none;
+  width: 90%;
+  border-color: rgba(255, 255, 255, 0)
+}
+
+textarea:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(255, 255, 255, 1);
+}
+
+textarea:focus:required:valid {
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+textarea:required:valid {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+input:required,
+textarea:required {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+  border-bottom: 2px dashed rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+input:required:valid {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input:required:invalid {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.expanding {
+  vertical-align: top;
+}
+
+.send-icn {
+  fill: rgba(255, 255, 255, 1)
+}
+
+.send-icn:hover {
+  fill: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 2vmax;
+}
+
+button:hover small {
+  opacity: 1;
+}
+
+small {
+  display: block;
+  opacity: 0;
+}
+
+
+@media(max-width: 950px){
+  div#contact-side-div{
+    text-align: center;
+  }
+}
+
+@media(max-width: 1000px){
+ .footer-container{
+    text-align: center;
+  }
+}

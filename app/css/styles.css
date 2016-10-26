@@ -1,0 +1,478 @@
+html{
+	height:100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 10rem;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.error-msg{
+	color: red;
+}
+
+.complete-msg{
+	color:green;
+}
+
+.hidden{
+	display: none;
+}
+
+.grayout{
+	background: #888 !important;
+	color: white !important;
+}
+
+div.header{
+	background-color: #efefef;
+	padding: 1.0rem 0;
+	margin: 0;
+}
+
+.header img{
+	height: 60px; /*vertically center the logo*/
+	float: left;
+	margin-left: 20px;
+}
+.header h2{
+	display: inline-block;
+	margin-left: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px 10px 80px 10px;
+    width: 90%;
+}
+
+/* The Close Button */
+.close {
+    /*color: #aaaaaa;*/
+    /*float: right;*/
+    /*font-size: 25px;
+    font-weight: bold;*/
+}
+
+/************navigation bar style************/
+
+nav li{
+	margin-left: -16px;
+}
+
+nav li:hover{
+	cursor: pointer;
+}
+
+nav span{
+  color:#fff;
+  background:#888;
+  position:relative;
+  display:inline-block;
+  margin:0 22px;
+  padding:4px 9px;
+  border-radius:4px 4px 0 0;
+  text-decoration: none;
+  font-size: 1.0rem;
+}
+
+nav span:hover{
+	color:cyan;
+}
+
+nav span:before,
+nav span:after{
+  content:" ";
+  position: absolute;
+  top:0;
+  width: 23px;
+  height: 100%;
+  background-color: #888; 
+}
+nav span:before{
+  border-radius: 16px 0 0 0;
+  transform: skew(-16deg);
+  left: -16px; 
+  border-left: 1px solid #555;
+}
+nav span:after{
+  border-radius: 0 16px 0 0;
+  transform: skew(16deg);
+  right: -16px; 
+  border-right: 1px solid #555;
+  z-index: 1;
+}
+nav li.active span{
+  color:#555;
+  background:#fff;
+  font-weight: bold;
+}
+nav li.active span:before,
+nav li.active span:after{
+  z-index: 1; 
+  background: #fff;
+}
+
+/************Main navigation bar************/
+
+nav.nav-main{
+	width:100%;
+	background: #555;
+}
+
+.nav-main ul{
+	margin-bottom: 0px;
+}
+
+.nav-main li{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+  	justify-content: center;
+  	padding-top: 1.2em;
+  	margin-bottom: 0
+}
+
+
+/************Raw file section**********/
+div#rawfile-wrapper{
+	padding-top: 32px;
+	width: 75%;
+	margin-left: 20px;
+}
+
+div#selected-rawfile-list-wrapper{
+	min-width:80%;
+	min-height: 100px; 
+}
+
+#selected-rawfile-list-wrapper ul{
+	list-style: none;
+}
+
+#selected-rawfile-list-wrapper input{
+	width: 60px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+div#upload-msg-wrapper{
+	min-width:80%;
+	min-height: 60px; 
+	float: left;
+}
+
+/************Database section**********/
+div#select-database-wrapper{
+	padding-top: 32px;
+	width: 640px;
+	margin-left: 20px;
+	display: none;
+}
+
+
+/************Parameter section************/
+div#parameter-wrapper{
+	/*margin: 0 auto;*/
+	padding-top: 32px;
+	max-width: 1360px;
+	width: 100%;
+	flex:1;/*for sticky footer*/
+	display: none;
+
+}
+
+div#vm-wrapper{
+	display:inline-block;
+	float:left;
+	margin-left: 2%;
+}
+
+div#vm-section{
+	border: 2px solid #555;
+	width:300px;
+	max-height: 482px;
+	padding:1%;
+	overflow:scroll;
+}
+
+div#fm-wrapper{
+	display:inline-block;
+	float:left;
+	margin-left: 2%;
+}
+
+div#fm-section{
+	border: 2px solid #555;
+	width:300px;
+	max-height: 482px;
+	padding:1%;
+	overflow:scroll;
+}
+
+div#enzyme-wrapper{
+	display:inline-block;
+	float:left;
+	margin-left: 2%;
+}
+
+div#enzyme-section{
+	border: 2px solid #555;
+	width:300px;
+	height: 482px;
+	padding:1%;
+	/*overflow:scroll;*/
+}
+
+div#isotope-wrapper{
+	display:inline-block;
+	float:left;
+	margin-left: 2%;
+}
+
+div#isotope-section-light{
+	border: 2.5px solid #555;
+	border-top: 0;
+	width:300px;
+	max-height: 450px;
+	padding:1%;
+	overflow:scroll;
+}
+
+div#isotope-section-medium{
+	border: 2.5px solid #555;
+	border-top: 0;
+	width:300px;
+	max-height: 450px;
+	padding:1%;
+	overflow:scroll;
+	display:none;
+}
+
+div#isotope-section-heavy{
+	border: 2.5px solid #555;
+	border-top: 0;
+	width:300px;
+	max-height: 450px;
+	padding:1%;
+	overflow:scroll;
+	display:none;
+}
+
+#instrument-resolution-wrapper{
+	display:inline-block;
+	float:left;
+	margin-left: 2%;
+}
+
+#instrument-resolution-wrapper fieldset{
+	width:600px;
+}
+
+#taxonomy-analysis-wrapper{
+	display:inline-block;
+	float:left;
+	margin-left: 2%;
+}
+
+#taxonomy-analysis-wrapper fieldset{
+	width:600px;
+}
+
+/***************Isotope navgation bar*******/
+nav.menu{
+	width:310px;
+}
+
+.menu ul{
+	display: flex;
+  	list-style: none;
+  	padding: 0;
+  	justify-content: center;
+  	padding-top: .5em;
+  	background: #555;
+  	margin-bottom: 0;
+}
+
+/******************BUTTONS****************/
+
+input#open-select-rawfile-btn, input#open-upload-rawfile-btn, input#generateUploadBtn{
+	/*position: flex;
+	margin-top: 20px;
+	margin-left: 45%;
+	padding: 10px 10px 10px 10px;*/
+	display: none;
+}
+
+div#open-select-rawfile-label{
+	margin-bottom: 20px;
+}
+
+
+div#open-select-rawfile-label, div#open-upload-rawfile-label, div#generateUploadlabel{
+	/*width: 120px;*/
+	color: white;
+	text-align: center;
+	background: #0390FF;
+	border: 1px solid #0390FF;
+	padding: 5px;
+	float: left;
+}
+
+div#open-select-rawfile-label:hover, div#open-upload-rawfile-label:hover, div#generateUploadlabel:hover{
+	box-shadow: 4px 4px 5px gray;
+}
+
+input#selectedRawFileListSubmitBtn, input#rawFileUploadSubmitBtn{
+	position: flex;
+	margin-top: 20px;
+	margin-left: 45%;
+	padding: 10px 10px 10px 10px;
+	display: none;
+}
+
+div#selectedRawFileListCloseLable, a#rawFileUploadCloseLabel{
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+div#selectedRawFileListSubmitLable, div#rawFileUploadSubmitLabel, div#selectedRawFileListCloseLable, a#rawFileUploadCloseLabel, div#rawfile-nextBtn-label, div#database-nextBtn-label{
+	color: white;
+	text-align: center;
+	background: #0390FF;
+	border: 1px solid #0390FF;
+	padding: 5px;
+	float: right;
+}
+
+div#selectedRawFileListSubmitLable:hover, div#rawFileUploadSubmitLabel:hover, div#selectedRawFileListCloseLable:hover, a#rawFileUploadCloseLabel:hover, div#rawfile-nextBtn-label:hover, div#database-nextBtn-label:hover{
+	box-shadow: 4px 4px 5px gray;
+}
+
+input#upload-submit-btn{
+	position: flex;
+	margin-top: 20px;
+	margin-left: 45%;
+	padding: 10px 10px 10px 10px;
+	display: none;
+}
+
+div#fileupload-submit-label{
+	width: 120px;
+	text-align: center;
+	background: #0390FF;
+	border: 1px solid #0390FF;
+	padding: 5px;
+	float: right;
+}
+
+div#fileupload-submit-label:hover{
+	color: white;
+	box-shadow: 4px 4px 5px gray;
+}
+
+/************Session Submit button********/
+div#session-submit-label-wrapper{
+	/*display: none;*/
+}
+
+input#session-submit-btn{
+	display: none;
+}
+
+div#session-submit-label{
+	color:white;
+	width: 120px;
+	text-align: center;
+	background: #0390FF;
+	border: 1px solid #0390FF;
+	padding: 5px;
+	margin: 10px;
+	float: right;
+}
+
+div#session-submit-label:hover{
+	color: white;
+	box-shadow: 4px 4px 5px gray;
+}
+
+/************Analysis Submit buttons********/
+
+input#analysis-submit-btn{
+	display: none;
+}
+
+div#analysis-submit-label, a.cancel-submit-label{
+	color: white;
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	background: #0390FF;
+	border: 1px solid #0390FF;
+	padding: 5px;
+	margin: 10px;
+}
+
+div#analysis-submit-label:hover, a.cancel-submit-label:hover{
+	color: white;
+	box-shadow: 4px 4px 5px gray;
+}
+
+/****************Summary page****************/
+
+div#summary-wrapper{
+	width:60%;
+	margin: 0 auto;
+}
+
+.title-decoration{
+	text-align: center;
+}
+
+/****************Footer****************/
+.footer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1.2rem;
+	background-color: #efefef;
+	text-align: center;
+}
+
+#help, #privacy{
+	cursor: pointer;
+	/*float: right;
+	margin-right: 20px;*/
+}
+
+#help:hover, #privacy:hover{
+	color: red;
+}

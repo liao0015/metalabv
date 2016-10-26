@@ -1,0 +1,13 @@
+{
+"vari mods":[{"name":"Oxidation (M)"},{"name":"Acetyl (Protein N-term)"}],
+"fix mods":[{"name":"Carbamidomethyl (C)"}],
+"enzyme":[{"name":"Trypsin"}],
+"light":[{"name":""}],
+"medium":[{"name":""}],
+"heavy":[{"name":""}],
+"dababase":"Z:\\Microbiome\\Workflow_walkthrough\\IGC_MLI.pep_cdhit100.fasta",
+"instrument resolution":"high_high",
+"build-in":"true",
+"unipept":"false",
+"raw files":[{"path":"Z:\\Microbiome\\Workflow_walkthrough\\data_test\\wash2\\wash_long_column_for_test1.raw","experiment":"exp"}]
+}
